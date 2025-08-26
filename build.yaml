@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: yoser_left
+    shield: ys_left
   - board: nice_nano_v2
-    shield: yoser_right
+    shield: ys_right
