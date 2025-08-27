@@ -1,0 +1,8 @@
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+config SHIELD_DVORAK_LEFT
+    def_bool $(shields_list_contains,dvorak_left)
+
+config SHIELD_DVORAK_RIGHT
+    def_bool $(shields_list_contains,dvorak_right)

@@ -1,17 +1,17 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-if SHIELD_YS_LEFT
+if SHIELD_DVORAK_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "YS"
+    default "DVORAK"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_YS_LEFT || SHIELD_YS_RIGHT
+if SHIELD_DVORAK_LEFT || SHIELD_DVORAK_RIGHT
 
 config ZMK_SPLIT
     default y
