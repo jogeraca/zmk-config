@@ -36,6 +36,18 @@
             , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    led_strip: ws2812 {
+        compatible = "worldsemi,ws2812-spi";
+        label = "WS2812";
+        spi-max-frequency = <4000000>;
+        spi-one-frame = <0x70>;
+        spi-zero-frame = <0x40>;
+        chain-length = <27>; // 21 backlight + 6 glowlight
+        color-mapping = <LED_COLOR_ID_GREEN
+                        LED_COLOR_ID_RED
+                        LED_COLOR_ID_BLUE>;
+    };
 };
 
 
