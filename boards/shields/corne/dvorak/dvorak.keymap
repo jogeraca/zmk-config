@@ -18,10 +18,7 @@
 #define LAUNCH  5
 
 
-&led_strip {
-   chain-length = <27>;
-  // 21 backlight + 6 glowlight
-};
+// LED strip configuration is now in the overlay files
 
 &mt {
     tapping-term-ms = <201>;
