@@ -17,6 +17,12 @@
 #define ADJUST  4
 #define LAUNCH  5
 
+
+&led_strip {
+   chain-length = <27>;
+  // 21 backlight + 6 glowlight
+};
+
 &mt {
     tapping-term-ms = <201>;
     flavor = "tap-preferred";
