@@ -19,7 +19,10 @@
 #define LAUNCH  5
 
 
-// LED strip configuration is now in the overlay files
+// LED strip configuration
+&led_strip {
+    chain-length = <27>;
+};
 
 &mt {
     tapping-term-ms = <201>;
